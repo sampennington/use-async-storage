@@ -1,0 +1,23 @@
+{
+  "name": "use-async-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "tsc"
+  },
+  "author": "Sam Pennington",
+  "license": "ISC",
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.9.0",
+    "react": "^16.13.1",
+    "react-native": "^0.62.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-native": "^0.62.2",
+    "typescript": "^3.7.4"
+  }
+}
