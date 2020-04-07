@@ -1,15 +1,23 @@
 {
   "name": "use-async-storage",
   "version": "1.0.0",
-  "description": "",
+  "description": "A hook for using react-native-community's AsyncStorage, with some common functionality built in.",
+  "keywords": [
+    "react",
+    "native",
+    "hook",
+    "AsyncStorage"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "git@github.com:sampennington/use-async-storage.git",
+  "homepage": "https://github.com/sampennington/use-async-storage.git",
   "scripts": {
     "test": "jest",
     "prepublish": "tsc"
   },
   "author": "Sam Pennington",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
     "react": "^16.13.1",
