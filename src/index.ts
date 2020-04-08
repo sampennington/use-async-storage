@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useAsyncStorage } from "@react-native-community/async-storage";
 
 function useStorage(storageKey: string, defaultValue: any) {
-  const [storageItem, setStorageItem] = useState(defaultValue);
+  const [storageItem, setStorageItem] = useState(JSON.stringify(defaultValue));
   const { getItem, setItem } = useAsyncStorage(storageKey);
 
   async function setStoredValue(value: any) {

@@ -35,4 +35,4 @@ const [value, setValue] = useAsyncStorage("someObject", {});
 console.log(value); // { foo: 'bar' }
 ```
 
-The value is now returned as true even if the apps been closed, component unmounted etc.
+The value is now returned from the AsyncStore
