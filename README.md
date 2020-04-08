@@ -1,6 +1,6 @@
 # use-async-storage
 
-A React native hook using AsyncStorage, with some improved functionality
+A React native hook using AsyncStorage, with some improvements, added functionality, and supports typescript.
 
 ## API
 
@@ -21,7 +21,7 @@ const [value, setValue] = useAsyncStorage("someObject", {});
 
 console.log(value); // {}
 
-setValue({ foo: "bar" });
+await setValue({ foo: "bar" });
 
 console.log(value); // { foo: 'bar' }
 ```
@@ -36,3 +36,15 @@ console.log(value); // { foo: 'bar' }
 ```
 
 The value is now returned from the AsyncStore
+
+## Usage with Typescript
+
+```typescript
+import { useAsyncStorage } from "use-async-storage";
+
+const [value, setValue] = useAsyncStorage<number>("someObject", {}); // error!
+const [value, setValue] = useAsyncStorage<number>("someObject", 1000); // ok!
+
+await setValue({ foo: "bar" }); // error!
+await setValue(123); // ok!
+```

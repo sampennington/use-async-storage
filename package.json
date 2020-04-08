@@ -1,12 +1,13 @@
 {
   "name": "use-async-storage",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A hook for using react-native-community's AsyncStorage, with some common functionality built in.",
   "keywords": [
     "react",
     "native",
     "hook",
-    "AsyncStorage"
+    "AsyncStorage",
+    "typescript"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
